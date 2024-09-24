@@ -34,6 +34,6 @@ function restart(){
      attempt=0;
     document.getElementById('number').value="" ;
     document.getElementById('comment').textContent="";
-    document.getElementById('attempts').textContent="Attempts: 0;"
+    document.getElementById('attempts').textContent="Attempts: 0"
 }
 
