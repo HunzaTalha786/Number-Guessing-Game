@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Number Guessing <br> Game</h1>
+    <div id="container">
+        
+        <label for="number">Enter Your Number</label><br>
+        <input id="number" placeholder="Enter Number" min="1" max="100" type="number">
+        <p id="point">(Guess a number between 1 to 100.)</p>
+        <button onclick="result()">GUESS</button>
+
+        <P id="comment"></P>
+        <p id="attempts">Attempts: 0</p>
+        <button onclick="restart()">RESTART</button>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
