@@ -1,4 +1,4 @@
-let guessNum=Math.floor(Math.random()*100)+1;
+let guessNum=Math.floor(Math.random()*20)+1;
 let attempt=0;
 
 
@@ -16,6 +16,14 @@ function result(){
         comment.textContent=`Error! Enter your number`;
         comment.style.color="red";
     }
+
+    else if(userNum>20){
+        comment.textContent=`Sorry!Guess number between 1 to 20`;
+        comment.style.color="brown";
+    }
+
+
+    
     else if(userNum>guessNum){
         comment.textContent=`Too high! Try again`;
         comment.style.color="orange";   
@@ -23,7 +31,7 @@ function result(){
 
     else if(userNum<guessNum){
         comment.textContent=`Too low! Try again`;
-        comment.style.color="blue";
+        comment.style.color="dodgerblue";
     }
     
 
